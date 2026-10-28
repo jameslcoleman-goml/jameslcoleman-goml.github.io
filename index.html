@@ -1,98 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grumpy Old Man Logistics | Valparaiso, Indiana</title>
-  <meta name="description" content="Moving? Grumpy Old Man Logistics drives your car to your new home. Based in Valparaiso, Indiana.">
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f1e9;
-      color: #23332e;
-      line-height: 1.6;
-    }
-    header {
-      padding: 24px;
-      background: #23332e;
-      color: #fff;
-      text-align: center;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 75px 24px;
-    }
-    .label {
-      color: #725326;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-size: 14px;
-    }
-    h1 {
-      font-size: clamp(38px, 7vw, 68px);
-      line-height: 1.1;
-      margin: 20px 0;
-    }
-    .intro { font-size: 22px; max-width: 650px; }
-    .card {
-      background: white;
-      border-top: 5px solid #b47a32;
-      border-radius: 8px;
-      padding: 28px;
-      margin-top: 45px;
-    }
-    h2 { margin-top: 0; }
-    footer {
-      padding: 24px;
-      text-align: center;
-      font-size: 14px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#203c32">
+<title>Grumpy Old Man Logistics | You move. I'll drive.</title>
+<meta name="description" content="Moving from the Valparaiso area? James Coleman drives your car to your new home. Grumpy Old Man Logistics: grumpy name, helpful driver.">
+<style>
+:root{--green:#203c32;--cream:#f6f2e7;--orange:#b84623;--yellow:#efd58b;--muted:#546158}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:var(--cream);color:var(--green);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+.wrap{width:min(1180px,calc(100% - 64px));margin:auto}
+header{border-bottom:1px solid #203c3230}
+nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:104px}
+.brand{text-decoration:none;display:flex;align-items:center;gap:14px}
+.monogram{background:var(--green);color:var(--cream);border-radius:50%;height:54px;width:54px;display:grid;place-items:center;font-weight:900;font-size:15px;letter-spacing:-1px;transform:rotate(-8deg)}
+.brand-name{font-size:14px;line-height:1.25;font-weight:800;letter-spacing:1.5px}
+.nav-links{display:flex;align-items:center;gap:30px;font-size:14px;font-weight:bold}.nav-links a{text-decoration:none}.nav-links a:hover{text-decoration:underline}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:22px;padding:15px 23px;border:2px solid var(--green);background:var(--green);color:var(--cream);font:700 15px Arial;text-decoration:none;cursor:pointer;transition:background .2s,transform .2s}
+.button:hover{background:#345547;transform:translateY(-2px)}.button.orange{background:var(--orange);border-color:var(--orange)}.button.orange:hover{background:#96391d}
+.hero{display:grid;grid-template-columns:1.12fr 1fr;align-items:center;gap:42px;padding:66px 0 72px}
+.eyebrow{text-transform:uppercase;letter-spacing:2.2px;font-size:11px;font-weight:800;display:flex;align-items:center;gap:10px}
+.eyebrow:before{content:"";width:22px;height:3px;background:var(--orange)}
+h1,h2,h3,p{margin-top:0}h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(52px,6.5vw,86px);font-weight:700;letter-spacing:-4px;line-height:1.04;margin:25px 0}
+h1 em{color:var(--orange);font-weight:normal} .intro{font-size:18px;line-height:1.7;max-width:440px;color:var(--muted);margin-bottom:27px}
+.small-note{font-size:12px;color:var(--muted);margin:13px 0 0}.hero-art{position:relative}
+.hero-art svg{display:block;width:100%;height:auto;border-radius:130px 130px 8px 8px}
+.art-caption{margin:12px 0 0;display:flex;justify-content:space-between;gap:15px;font-size:10px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.ribbon{background:var(--green);color:var(--cream);padding:21px 0}.ribbon .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:12px;letter-spacing:1.4px;font-weight:700;text-transform:uppercase}.ribbon b{color:var(--yellow);font-size:17px}
+section{padding:76px 0}.section-top{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:35px}
+h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(34px,4vw,49px);letter-spacing:-1.6px;line-height:1.13;margin-bottom:0}
+.section-top p{max-width:330px;color:var(--muted);font-size:15px;margin:0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #203c3238}
+.step{padding:28px 28px 0 0}.step+.step{border-left:1px solid #203c3238;padding-left:28px}
+.number{font-size:12px;letter-spacing:2px;color:var(--orange);font-weight:bold;display:block;margin-bottom:22px}
+h3{font-size:20px;line-height:1.3;margin-bottom:12px}.step p{font-size:15px;color:var(--muted);margin-bottom:0}
+.about{background:#e8e8db}.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:85px;align-items:center}
+.quote{font-family:Georgia,serif;font-size:clamp(32px,4vw,46px);letter-spacing:-1px;line-height:1.2;margin:0;padding:0 0 0 25px;border-left:5px solid var(--orange)}
+.about-copy p{color:var(--muted);font-size:16px;margin:20px 0 0}.about-copy strong{color:var(--green)}
+.contact{text-align:center;padding:80px 0}.contact .eyebrow{justify-content:center}.contact h2{margin:20px 0}.contact p{color:var(--muted);max-width:530px;margin:0 auto 26px}
+.contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.copy{background:transparent;color:var(--green)}.copy:hover{background:#e8e8db}
+.email-address{display:block;margin-top:20px;font-size:14px;overflow-wrap:anywhere;text-underline-offset:4px}
+#copy-status{min-height:24px;margin:8px auto 0;font-size:13px}
+footer{border-top:1px solid #203c3230;padding:25px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;font-size:11px;letter-spacing:.6px}.footer-inner strong{font-size:12px}
+.skip{position:absolute;top:-100px;left:20px;z-index:3;background:var(--green);color:white;padding:12px}.skip:focus{top:10px}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)}nav{min-height:84px}.nav-links>a:first-child{display:none}.nav-links{gap:0}.nav-links .button{font-size:12px;padding:10px 12px}.brand-name{font-size:10px;letter-spacing:1px}.monogram{width:42px;height:42px;font-size:12px}.brand{gap:9px}.hero{grid-template-columns:1fr;gap:35px;padding:42px 0}h1{letter-spacing:-2.5px;margin:20px 0}.hero-art{max-width:480px;width:100%;margin:auto}.intro{font-size:17px}.ribbon .wrap{flex-direction:column;gap:6px;font-size:10px}.ribbon{padding:17px 0}.section-top{display:block}.section-top p{margin-top:20px;max-width:100%}section{padding:50px 0}.steps{grid-template-columns:1fr}.step,.step+.step{padding:24px 0;border-left:0}.step+.step{border-top:1px solid #203c3230}.number{margin-bottom:12px}.about-grid{grid-template-columns:1fr;gap:30px}.contact{padding:55px 0}.footer-inner{flex-direction:column;gap:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+</style>
 </head>
 <body>
-  <header>GRUMPY OLD MAN LOGISTICS</header>
-  <main>
-    <p class="label">Based in Valparaiso, Indiana</p>
-    <h1>You move.<br>I'll drive your car.</h1>
-    <p class="intro">
-      Moving to a new home? Let James drive your car to your
-      new location so you have one less thing to figure out.
-    </p>
-    <section class="card">
-      <h2>A driver for your move.</h2>
-      <p>
-        I'm James Coleman, the man behind Grumpy Old Man Logistics.
-        I'm starting with a straightforward service: driving
-        customers' cars from the Valparaiso area to their new homes.
-      </p>
-      <p>
-        Your car is driven to its destination, rather than
-        loaded onto a transport truck.
-      </p>
-      <h2>Let's talk about your move.</h2>
-      <p>
-        Email James with your starting location, destination,
-        and planned moving date.
-      </p>
-      <p>
-        <a href="mailto:james@grumpyoldmanlogistics.com"
-           style="display:inline-block;background:#23332e;color:white;
-                  padding:14px 22px;border-radius:6px;text-decoration:none;
-                  font-weight:bold;">
-          Email James
-        </a>
-      </p>
-      <p style="overflow-wrap:anywhere;">james@grumpyoldmanlogistics.com</p>
-    </section>
-  </main>
-  <footer>
-    Grumpy Old Man Logistics · Valparaiso, Indiana
-  </footer>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav class="wrap" aria-label="Main navigation">
+<a href="#" class="brand" aria-label="Grumpy Old Man Logistics home"><span class="monogram">GOML</span><span class="brand-name">GRUMPY OLD MAN<br>LOGISTICS</span></a>
+<div class="nav-links"><a href="#how-it-works">How it works</a><a class="button" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></div>
+</nav></header>
+<main id="main">
+<div class="wrap hero">
+<div><p class="eyebrow">Valparaiso, Indiana · Car relocation</p>
+<h1>You move.<br>I'll drive<br><em>your car.</em></h1>
+<p class="intro">A new home. A long to-do list. Let James take the drive off your hands and get your car to your new place.</p>
+<a class="button orange" href="mailto:james@grumpyoldmanlogistics.com?subject=Let%27s%20talk%20about%20my%20move">Email James <span aria-hidden="true">↗</span></a>
+<p class="small-note">Tell me where you're moving and when.</p></div>
+<div class="hero-art">
+<svg viewBox="0 0 500 550" role="img" aria-labelledby="art-title art-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="art-title">Get Off My Lawn. Let's hit the road.</title><desc id="art-desc">A vintage lawn sign beside a winding road, beneath a warm sunset.</desc>
+<defs><pattern id="grass" width="38" height="32" patternUnits="userSpaceOnUse"><path d="m10 25 3-7 3 7m13-13 2-5 3 5" fill="none" stroke="#f6f2e7" stroke-opacity=".17" stroke-width="1.5"/></pattern></defs>
+<path fill="#dfdfcb" d="M0 0h500v550H0z"/><circle cx="377" cy="145" r="72" fill="#d99a50"/>
+<path d="M0 270Q100 190 245 270T500 250V550H0Z" fill="#8d9b79"/>
+<path d="M0 340Q170 260 500 320V550H0Z" fill="#3d6047"/>
+<path d="M0 340Q170 260 500 320V550H0Z" fill="url(#grass)"/>
+<path d="M295 550Q470 445 350 366T390 266" fill="none" stroke="#e0d2ad" stroke-width="100"/>
+<path d="M295 550Q470 445 350 366T390 266" fill="none" stroke="#263c34" stroke-width="85"/>
+<path d="M295 550Q470 445 350 366T390 266" fill="none" stroke="#efd58b" stroke-width="3" stroke-dasharray="16 16"/>
+<g transform="rotate(-7 210 250)"><path d="M192 295h20v175h-20z" fill="#c5ae83"/><path d="M192 295h5v175h-5z" fill="#ad946b"/>
+<rect x="40" y="118" width="330" height="213" rx="5" fill="#172e26" opacity=".18" transform="translate(7 9)"/>
+<rect x="40" y="118" width="330" height="213" rx="5" fill="#f6f2e7"/>
+<rect x="49" y="127" width="312" height="195" rx="2" fill="none" stroke="#203c32" stroke-width="2"/>
+<text x="205" y="166" text-anchor="middle" fill="#b84623" font-family="Arial,sans-serif" font-size="12" letter-spacing="4" font-weight="bold">GOML</text>
+<text x="205" y="212" text-anchor="middle" fill="#203c32" font-family="Georgia,serif" font-size="39" font-weight="bold">GET OFF</text>
+<text x="205" y="256" text-anchor="middle" fill="#203c32" font-family="Georgia,serif" font-size="39" font-weight="bold">MY LAWN.</text>
+<path d="M90 276h230" stroke="#203c32" stroke-width="1"/>
+<text x="205" y="300" text-anchor="middle" fill="#203c32" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.8" font-weight="bold">LET'S HIT THE ROAD.</text>
+</g><path d="m40 496 7-23 6 23 8-13 2 16m90-17 4-14 5 14" stroke="#a8b28a" stroke-width="3" fill="none"/>
+</svg>
+<p class="art-caption"><span>A little attitude.</span><span>A lot of miles ahead.</span></p>
+</div></div>
+<div class="ribbon"><div class="wrap"><span>Based in Valparaiso</span><b>Grumpy name. Helpful driver.</b><span>Your car. Driven to your new home.</span></div></div>
+<section id="how-it-works" class="wrap">
+<div class="section-top"><h2>One less thing<br>on your moving list.</h2><p>A straightforward service for people moving from the Valparaiso area.</p></div>
+<div class="steps">
+<article class="step"><span class="number">01 / THE PLAN</span><h3>Tell me about your move.</h3><p>Email your starting location, destination, and planned moving date.</p></article>
+<article class="step"><span class="number">02 / THE DETAILS</span><h3>We'll talk it through.</h3><p>We'll discuss the trip, timing, and cost before you make arrangements.</p></article>
+<article class="step"><span class="number">03 / THE DRIVE</span><h3>You move. I hit the road.</h3><p>I drive your car to your new home, so you can focus on getting there yourself.</p></article>
+</div></section>
+<section class="about"><div class="wrap about-grid">
+<blockquote class="quote">“Get off my lawn.<br>I'll get your car<br>to your driveway.”</blockquote>
+<div class="about-copy"><p class="eyebrow">Meet the man behind the name</p><h2>James Coleman.<br>Your driver.</h2><p>I'm starting Grumpy Old Man Logistics with one simple service: driving customers' cars from the Valparaiso area to their new homes.</p><p><strong>GOML also means “Get Off My Lawn.”</strong> A little grumpy humor comes with the name. Helping with your move comes with the job.</p></div>
+</div></section>
+<section class="contact wrap" id="contact"><p class="eyebrow">Let's get you moving</p><h2>Where are we headed?</h2><p>Send your starting location, destination, and moving date. We'll start with a conversation about your trip.</p>
+<div class="contact-actions"><a class="button orange" href="mailto:james@grumpyoldmanlogistics.com?subject=Let%27s%20talk%20about%20my%20move">Email James <span aria-hidden="true">↗</span></a><button class="button copy" id="copy-email" type="button" hidden>Copy email address <span aria-hidden="true">＋</span></button></div>
+<a class="email-address" href="mailto:james@grumpyoldmanlogistics.com">james@grumpyoldmanlogistics.com</a><p id="copy-status" role="status" aria-live="polite"></p>
+</section></main>
+<footer><div class="wrap footer-inner"><strong>GRUMPY OLD MAN LOGISTICS</strong><span>Valparaiso, Indiana</span><span>Get off my lawn. Get on with your move.</span></div></footer>
+<script>
+const copyButton=document.getElementById('copy-email');
+if(navigator.clipboard && window.isSecureContext){
+copyButton.hidden=false;
+copyButton.addEventListener('click',async()=>{
+const status=document.getElementById('copy-status');
+try{await navigator.clipboard.writeText('james@grumpyoldmanlogistics.com');status.textContent='Email address copied. Paste it into your email.';}
+catch{status.textContent='Please select and copy the email address above.';}
+});
+}
+</script>
 </body>
 </html>
